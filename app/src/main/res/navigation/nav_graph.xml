@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/medicineFragment">
+
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.imran_mamirov_hw_medicineapp.ui.fragment.medicine.MedicineFragment"
+        android:label="fragment_medicine"
+        tools:layout="@layout/fragment_medicine" >
+        <action
+            android:id="@+id/action_medicineFragment_to_medicineDetailFragment"
+            app:destination="@id/medicineDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicineDetailFragment"
+        android:name="com.example.imran_mamirov_hw_medicineapp.ui.fragment.medicine_detail.MedicineDetailFragment"
+        android:label="fragment_medicine_detail"
+        tools:layout="@layout/fragment_medicine_detail" >
+        <argument
+            android:name="Id"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+</navigation>

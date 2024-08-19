@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-86dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_plus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00BCD4"
+        android:text="plus"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="500dp"
+        android:layout_gravity="end|bottom"
+        app:layout_constraintVertical_bias="0.816"
+        app:layout_goneMarginTop="100dp" />
+
+
+</FrameLayout>
